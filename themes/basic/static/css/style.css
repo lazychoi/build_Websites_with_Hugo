@@ -1,0 +1,29 @@
+/* width of container */
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* background and forground color for the navigation bar and footer */
+nav, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* responsive */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { flex-direction: row; }
+}
